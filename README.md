@@ -1,6 +1,8 @@
 # LibGuides-Mobile-Nav-Menu
 Script for toggling LibGuides navigation menu on smaller screens.
 
+## Overview
+
 This script hides and toggles the LibGuides side-navigation menu on smaller screens.
 See it: https://www.screencast.com/t/pZhebxjqRyJ
 
