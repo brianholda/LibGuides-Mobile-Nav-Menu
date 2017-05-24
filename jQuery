@@ -1,0 +1,20 @@
+//check if screen width is less than 992px
+if ( $( window ).width() < 992)  {
+
+            //check if .toggleMenuButton exists
+            if ( $( ".toggleMenuButton" ).length ) {
+
+                $( ".toggleMenuButton" ).removeClass( "hide" );
+                $( "#s-lg-guide-tabs" ).hide();
+                $( ".toggleMenuButton" ).on( "click touchstart", function( event ) {
+                    $( "#s-lg-guide-tabs" ).toggle();
+                    $( "#s-lg-guide-tabs > ul").css({
+                        "margin": "0 auto",
+                        "width": "95%"    
+                    });
+                    event.preventDefault();
+                });//end .toggleMenuButton tap
+
+            }//end if .toggleMenuButton exists
+
+        }//end if window.width < 992px
