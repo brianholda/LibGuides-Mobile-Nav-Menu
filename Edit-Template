@@ -1,0 +1,27 @@
+<div id="s-lg-side-nav-content" class="container s-lib-side-borders pad-top">
+    <div class="row">
+        <div class="col-md-3 s-lg-tabs-side pad-bottom-med">
+            <div id="s-lg-tabs-container">
+            
+                <!--Copy and paste the following line into this location in your LibGuides template-->
+                <p class="toggleMenuButton btn btn-block btn-default btn-lg hide" aria-hidden="true">Menu <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                
+                <div id="s-lg-guide-tabs" role="navigation" aria-label="Guide Page Menu">
+                    <ul class="nav nav-pills nav-stacked split-button-nav" role="menu">
+                      {{guide_nav}}
+                    </ul>
+                    {{side_nav_boxes}}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="s-lg-tab-content">
+                                    <h1 class="lgPageTitle">{{page_title}}</h1>
+                <div id="s-lg-guide-main" class="tab-pane active">
+                    {{content}}
+                </div>
+            </div>
+            {{page_prev_next_links}}
+        </div>
+    </div>
+</div>
